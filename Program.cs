@@ -133,6 +133,18 @@ namespace BinarySearchTree
                 Console.WriteLine();
                 switch (ch)
                 {
+                    case '1':
+                        {
+                            Console.Write("Enter a word: ");
+                            String word = Console.ReadLine();
+                            x.insert(word);
+                        }
+                        break;
+                    case '2':
+                        {
+                            x.inorder(x.ROOT);
+                        }
+                        break;
 
                 }
 
