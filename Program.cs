@@ -24,7 +24,23 @@ namespace BinarySearchTree
     /* A node class consists os three things, the information, reference to the 
        right child, and reference to the left child */
 
-    
+    class BinaryTree
+    {
+        public Node ROOT;
+        public BinaryTree()
+        {
+            ROOT = null; /* Initializing ROOT to null*/
+        }
+        public void insert(string element)/* Insert a node in the binary search tree */
+        {
+            Node tmp, parent = null, currentNode = null;
+            Search(element, ref parent, ref currentNode);
+            if (currentNode != null) /*Check if the node to be inserted already inserted or not*/
+            {
+
+            }
+        }
+    }
     internal class Program
     {
         static void Main(string[] args)
