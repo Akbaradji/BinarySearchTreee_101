@@ -77,7 +77,7 @@ namespace BinarySearchTree
             if (ROOT == null)
             {
                 Console.WriteLine("Tree is empty");
-                return ;
+                return;
             }
             if (ptr != null)
             {
@@ -113,13 +113,31 @@ namespace BinarySearchTree
                 postorder(ptr.rightchild);
                 Console.Write(ptr.info + " ");
             }
-
         }
-    }
-    internal class Program
-    {
+
+
+
         static void Main(string[] args)
         {
+            BinaryTree x = new BinaryTree();
+            while (true)
+            {
+                Console.WriteLine("\nMenu");
+                Console.WriteLine("1. Implement insert operation");
+                Console.WriteLine("2. Perform inorder traversal");
+                Console.WriteLine("3. Perform preorder traversal");
+                Console.WriteLine("4. Perform postorder traversal");
+                Console.WriteLine("5. Exit");
+                Console.Write("\nEnter your choice (1-5) :");
+                char ch = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine();
+                switch (ch)
+                {
+
+                }
+
+            }
         }
     }
+   
 }
